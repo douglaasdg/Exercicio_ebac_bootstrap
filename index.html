@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constellation</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="./img/icon.png" type="image/png">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="./img/icon.png" alt="icon">
+                <h1>Constellation</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <i class="bi bi-three-dots-vertical"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16" style="color: aliceblue;">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                    </svg>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pacotes">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promocoes">Promoções</a>
+                    </li>
+                </ul>
+            </nav>
+            <button id="btn-notificacoes" type="button" class="btn btn-danger">
+                <i class="bi bi-bell-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                </svg>
+            </button>
+            </div>
+        </div>
+    </header>
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <div class="container">
+                <div id="carousel-section" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                                <img class="d-block w-100" src="./img/dicas_viagens.jpg" alt="Dicas para sua viagem">
+                                <div class="carousel-caption">
+                                    <a class="nav-link" href="#">
+                                        <h2>Dicas para sua viagem</h2>
+                                        <p>Saiba mais!</p>
+                                    </a>
+                                </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="./img/verao.jpg" alt="Verão vem ai!">
+                                <div class="carousel-caption">
+                                    <h2>Verão vem ai!</h2>
+                                    <p>Saiba mais!</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="./img/abordo.jpg" alt="O que fazer para ter uma viagem tranquila?">
+                                <div class="carousel-caption">
+                                    <h2>O que fazer para ter uma viagem tranquila?</h2>
+                                    <p>Saiba mais!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-section" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-section" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button class="active" type="button" data-bs-target="#carousel-section" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-section" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-section" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pacotes">
+            <h2>Pacotes</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <article class="card">
+                            <header class="card-header">
+                                <h2>Toronto</h2>
+                                <p>Canadá</p>
+                            </header>
+                            <img src="./img/toronto.jpg" alt="Canadá">
+                            <div class="card-body">
+                                <h4 class="card-title">Pacote Completo</h4>
+                                <p class="card-text">
+                                    Explore a icônica CN Tower, a diversidade cultural e a energia desta incrível cidade canadense.
+                                </p>
+                                <div class="price">
+                                    <p>A partir de <strong>R$ 11.799,99</strong></p>
+                                </div>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <article class="card">
+                            <header class="card-header">
+                                <h2>Fort Worth</h2>
+                                <p>Texas</p>
+                            </header>
+                            <img src="./img/texas.jpg" alt="Fort Worth">
+                            <div class="card-body">
+                                <h4 class="card-title">Pacote Completo</h4>
+                                <p class="card-text">
+                                    Do charme histórico dos Stockyards à moderna cena artística, viva a autêntica cultura cowboy.
+                                </p>
+                                <div class="price">
+                                    <p>A partir de <strong>R$ 8.499,99</strong></p>
+                                </div>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <article class="card">
+                            <header class="card-header">
+                                <h2>Paris</h2>
+                                <p>França</p>
+                            </header>
+                            <img src="./img/paris.jpg" alt="Paris">
+                            <div class="card-body">
+                                <h4 class="card-title">Pacote Completo</h4>
+                                <p class="card-text">
+                                    Viva o romance aos pés da Torre Eiffel, explore museus mundialmente famosos e saboreie a culinária inesquecível.
+                                </p>
+                                <div class="price">
+                                    <p>A partir de <strong>R$ 12.799,99</strong></p>
+                                </div>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promocoes">
+            <h2>Promoções</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <article class="card">
+                            <header class="card-header">
+                                <h2>Tóquio</h2>
+                                <p>Japão</p>
+                            </header>
+                            <div id="carousel-card-tokyo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000" class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/tokyo1.jpg" alt="Ruas movimentas de Tóquio">
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="d-block w-100" src="./img/tokyo2.jpg" alt="Centro de Tóquio">
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="d-block w-100" src="./img/tokyo3.jpg" alt="visão da cidade de Tóquio">
+                                    </div>
+                                </div>
+                                <button data-bs-target="#carousel-card-tokyo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button data-bs-target="#carousel-card-tokyo" data-bs-slide="next" class="carousel-control-next" type="button">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button class="active" type="button" data-bs-target="#carousel-card-tokyo" data-bs-slide-to="0"></button>
+                                    <button type="button" data-bs-target="#carousel-card-tokyo" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-card-tokyo" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Pacote Completo</h4>
+                                <p class="card-text">
+                                    Mergulhe na metrópole onde templos antigos encontram luzes de néon e tecnologia de ponta.
+                                </p>
+                                <div class="price">
+                                    <h6>A partir de</h6>
+                                    <strong>12x R$ 340</strong>
+                                    <h6>Preço por pessoa*</h6>
+                                </div>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <article class="card">
+                            <header class="card-header">
+                                <h2>Amsterdã</h2>
+                                <p>Holanda</p>
+                            </header>
+                            <div id="carousel-card-amsterda" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000" class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/amsterda1.jpg" alt="Cidade de Amsterdã">
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="d-block w-100" src="./img/amsterda2.jpg" alt="Centro de Amsterdã">
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="d-block w-100" src="./img/amsterda3.jpg" alt="Passeio turístico">
+                                    </div>
+                                </div>
+                                <button data-bs-target="#carousel-card-amsterda" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button data-bs-target="#carousel-card-amsterda" data-bs-slide="next" class="carousel-control-next" type="button">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button class="active" type="button" data-bs-target="#carousel-card-amsterda" data-bs-slide-to="0"></button>
+                                    <button type="button" data-bs-target="#carousel-card-amsterda" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-card-amsterda" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Pacote Completo</h4>
+                                <p class="card-text">
+                                    Pedale por pontes pitorescas, visite museus de arte renomados e sinta a atmosfera única dos canais.
+                                </p>
+                                <div class="price">
+                                    <h6>A partir de</h6>
+                                    <strong>12x R$ 230</strong>
+                                    <h6>Preço por pessoa*</h6>
+                                </div>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <article class="card">
+                            <header class="card-header">
+                                <h2>Berna</h2>
+                                <p>Suiça</p>
+                            </header>
+                            <div id="carousel-card-suica" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000" class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/suica2.jpg" alt="Cidade de Berna">
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="d-block w-100" src="./img/suica1.jpg" alt="Paisagem suiça">
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="d-block w-100" src="./img/suica3.jpg" alt="Lago">
+                                    </div>
+                                </div>
+                                <button data-bs-target="#carousel-card-suica" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button data-bs-target="#carousel-card-suica" data-bs-slide="next" class="carousel-control-next" type="button">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button class="active" type="button" data-bs-target="#carousel-card-suica" data-bs-slide-to="0"></button>
+                                    <button type="button" data-bs-target="#carousel-card-suica" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-card-suica" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Pacote Completo</h4>
+                                <p class="card-text">
+                                    Encante-se com o centro histórico perfeitamente preservado, rodeado pelo Rio Aare e com vistas alpinas.
+                                </p>
+                                <div class="price">
+                                    <h6>A partir de</h6>
+                                    <strong>12x R$ 399</strong>
+                                    <h6>Preço por pessoa*</h6>
+                                </div>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div data-bs-autohide="false" id="mensagem-alerta" class="toast">
+            <header class="toast-header">
+                <strong>Notificações</strong>
+            </header>
+            <div class="toast-body">
+                Cadastre-se agora mesmo, não perca tempo de desfrutar de uma viagem incrível! &#128747
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" type="button" class="btn btn-danger">
+                        Fechar
+                    </button>
+                    <button id="Cadastro" type="button" class="btn btn-warning">
+                        Cadastrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-notificacoes')
+        const mensagem = document.getElementById('mensagem-alerta')
+
+        if(ativadorToast){
+            ativadorToast.addEventListener('click', function(){
+                const toast = new bootstrap.Toast(mensagem)
+                toast.show()
+            })
+        }
+    </script>
+</body>
+</html>

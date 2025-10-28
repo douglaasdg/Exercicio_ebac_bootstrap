@@ -1,0 +1,62 @@
+        #cabecalho img {
+            height: 50px;
+            padding-right: 5px;
+        }
+
+        #cabecalho button {
+            margin-left: 1vh;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            background-color: #340094;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #a5a5a5;
+        }
+
+        header h1 {
+            padding-right: 15vh;
+        }
+        .nav-link {
+            text-align: center;
+            color: #fff;
+        }
+
+        .navbar-nav #menu {
+            background-color: #fff;
+        }
+
+        #inicio .container {
+            padding-top: 5px;
+        }
+
+        section {
+            padding-top: 70px;
+        }
+
+        #cabecalho {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #240053;
+            color: #fff;
+            z-index: 5000;
+        }
+
+        section img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #240053;
+            height: 10vh;
+        }
+
+        .toast-header {
+            background-color: #240053;
+            color: #fff;
+        }
